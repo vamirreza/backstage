@@ -1,0 +1,10 @@
+
+services:
+  backstage:
+    build:
+      context: .
+    environment:
+      - AUTH_GITHUB_CLIENT_ID=${AUTH_GITHUB_CLIENT_ID}
+      - AUTH_GITHUB_CLIENT_SECRET=${AUTH_GITHUB_CLIENT_SECRET}
+    ports:
+      - 7007:7007
